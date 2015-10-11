@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System; // instructions that tell the compiler we are using things from System namespace
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +17,7 @@ namespace YellowBook_2._1._1
             widthString = Console.ReadLine();
             width = double.Parse(widthString);
 
-            heightString = Console.ReadLine();
+            heightString = Console.ReadLine();//separates the object identifier from the method identifier
             height = double.Parse(heightString);
 
             woodLength = 2 * (width + height) * 3.25;
