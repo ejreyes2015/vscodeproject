@@ -47,6 +47,7 @@ namespace CS_ASP_011if
               you dont have to put ==true or ==false
             */
 
+            /*
             if (coolCheckBox.Checked) // if the box is checked otherwise goes to else
             {
                 resultLabel.Text = "yes, you are cool!";
@@ -55,7 +56,27 @@ namespace CS_ASP_011if
             {
                 resultLabel.Text = "don't be so hard on yourself";
             }
+            */
 
+            //radio button below has to be under the same group name to make sure only one is choosen
+            if (pizzaRadioButton.Checked)//originally the button will be unchecked aka false 
+            {
+                resultLabel.Text = "You must be from Chicago!";
+            }
+            else if (saladRadioButton.Checked)
+            {
+                resultLabel.Text = "You must be healthy";
+            }
+            else if (pbjRadioButton.Checked)
+            {
+                resultLabel.Text = "you must be a funb loving person";
+            }
+            else //else is always the last item 
+            {
+                resultLabel.Text = "Please select one of the options";
+            }
         }
+
+      
     }
 }
